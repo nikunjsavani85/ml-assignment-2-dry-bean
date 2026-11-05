@@ -1,0 +1,6 @@
+ML Model Name,Observation
+Logistic Regression,"Test accuracy 0.9192, macro F1 0.9302, AUC 0.9947; CV train-validation F1 gap 0.0020. A scaled linear baseline. Compare its AUC with F1: probability ranking and final class decisions measure different things."
+Decision Tree,"Test accuracy 0.9022, macro F1 0.9166, AUC 0.9747; CV train-validation F1 gap 0.0451. The train-validation F1 gap is evidence to consider when assessing overfitting despite the depth and leaf-size limits."
+KNN,"Test accuracy 0.9136, macro F1 0.9250, AUC 0.9854; CV train-validation F1 gap 0.0644. Distance-weighted neighbours need scaling. Its perfect in-sample score is expected from self-neighbours and does not imply perfect generalization."
+Naive Bayes,"Test accuracy 0.8970, macro F1 0.9072, AUC 0.9911; CV train-validation F1 gap -0.0007. The independent Gaussian feature assumption is restrictive for related shape measurements; the scores alone do not prove the cause of errors."
+Support Vector Machine,"Test accuracy 0.9236, macro F1 0.9347, AUC 0.9944; CV train-validation F1 gap 0.0083. The scaled RBF model allows nonlinear boundaries. Compare the validation result with held-out F1 rather than selecting parameters on the test set."
