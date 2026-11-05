@@ -13585,7 +13585,7 @@
   ],
   "selection_criterion": "Mean three-fold stratified training-only cross-validation macro F1",
   "selected_model": "Support Vector Machine",
-  "python_version": "3.11.9",
+  "python_version": "3.12.7",
   "packages": {
     "numpy": "2.4.6",
     "pandas": "3.0.5",
@@ -13617,7 +13617,7 @@
         "verbose": 0,
         "warm_start": false
       },
-      "fit_seconds": 0.43132330000003094
+      "fit_seconds": 3.19651193000027
     },
     "Decision Tree": {
       "filename": "decision_tree.joblib",
@@ -13637,7 +13637,7 @@
         "random_state": 42,
         "splitter": "best"
       },
-      "fit_seconds": 0.20631380000008903
+      "fit_seconds": 0.28107449999879464
     },
     "KNN": {
       "filename": "knn.joblib",
@@ -13652,7 +13652,7 @@
         "p": 2,
         "weights": "distance"
       },
-      "fit_seconds": 0.02737610000008317
+      "fit_seconds": 0.029863211999327177
     },
     "Naive Bayes": {
       "filename": "naive_bayes.joblib",
@@ -13661,29 +13661,34 @@
         "priors": null,
         "var_smoothing": 1e-09
       },
-      "fit_seconds": 0.045010499999989406
+      "fit_seconds": 0.031212053998388
     },
     "Support Vector Machine": {
       "filename": "support_vector_machine.joblib",
       "scaled": true,
       "parameters": {
-        "C": 10.0,
-        "break_ties": false,
-        "cache_size": 200,
-        "class_weight": null,
-        "coef0": 0.0,
-        "decision_function_shape": "ovr",
-        "degree": 3,
-        "gamma": "scale",
-        "kernel": "rbf",
-        "max_iter": -1,
-        "probability": true,
-        "random_state": 42,
-        "shrinking": true,
-        "tol": 0.001,
-        "verbose": false
+        "cv": 3,
+        "ensemble": "auto",
+        "estimator__C": 10.0,
+        "estimator__break_ties": false,
+        "estimator__cache_size": 200,
+        "estimator__class_weight": null,
+        "estimator__coef0": 0.0,
+        "estimator__decision_function_shape": "ovr",
+        "estimator__degree": 3,
+        "estimator__gamma": "scale",
+        "estimator__kernel": "rbf",
+        "estimator__max_iter": -1,
+        "estimator__probability": "deprecated",
+        "estimator__random_state": 42,
+        "estimator__shrinking": true,
+        "estimator__tol": 0.001,
+        "estimator__verbose": false,
+        "estimator": "SVC(C=10.0, random_state=42)",
+        "method": "sigmoid",
+        "n_jobs": null
       },
-      "fit_seconds": 4.031255699999974
+      "fit_seconds": 3.32503204600107
     }
   }
 }
