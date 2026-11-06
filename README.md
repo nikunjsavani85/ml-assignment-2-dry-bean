@@ -26,7 +26,7 @@ Duplicates were removed before splitting so identical rows cannot appear on both
 
 https://github.com/nikunjsavani85/ml-assignment-2-dry-bean
 
-Live Streamlit app: *to be added after deployment*
+Live Streamlit app: https://ml-assignment-2-dry-bean-gbqbapzsntbesykcs9jgy6.streamlit.app/
 
 ## d. Models used
 
@@ -50,7 +50,7 @@ All five models are scikit-learn pipelines trained on the same split. Logistic R
 | Naive Bayes | 0.8970 | 0.9911 | 0.9081 | 0.9082 | 0.9072 | 0.8762 |
 | Support Vector Machine | 0.9236 | 0.9944 | 0.9356 | 0.9340 | 0.9347 | 0.9076 |
 
-Precision, Recall and F1 are macro-averaged; AUC is macro one-vs-rest; MCC is the multiclass form. Full-precision values are in [results/metrics.csv](results/metrics.csv).
+Precision, Recall and F1 are macro-averaged, AUC is macro one-vs-rest, MCC is the multiclass form. Full-precision values are in [results/metrics.csv](results/metrics.csv).
 
 ### Observations
 
@@ -80,7 +80,7 @@ ml-assignment-2-dry-bean/
 
 ## Run locally
 
-Python 3.11 is recommended (the models were trained with Python 3.11.9 and scikit-learn 1.9.0).
+Python 3.12 is recommended (the models were trained with Python 3.12.7 and scikit-learn 1.9.0).
 
 ```bash
 git clone https://github.com/nikunjsavani85/ml-assignment-2-dry-bean.git
