@@ -138,7 +138,8 @@ Python 3.12.7 and scikit-learn 1.9.0 with the pinned dependencies.
 git clone https://github.com/nikunjsavani85/ml-assignment-2-dry-bean.git
 cd ml-assignment-2-dry-bean
 python -m venv .venv
-# Windows: .venv\Scripts\activate    Linux/macOS: source .venv/bin/activate
+# Windows: .venv\Scripts\activate
+# Linux/macOS: source .venv/bin/activate
 pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
